@@ -13,3 +13,13 @@
 
 # Input : n = 13
 # Output : False
+
+def is_power(n):
+    if n == 1 or n == 2:
+        return True
+    elif n < 2: 
+        return False
+    else:
+        return is_power( (n/2) )
+
+print(is_power(1))
