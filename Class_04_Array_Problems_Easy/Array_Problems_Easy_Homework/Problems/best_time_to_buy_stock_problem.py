@@ -5,3 +5,35 @@
 
 input_array = [7, 1, 5, 3, 6, 4]
 # Output = 5
+
+# brute force approach
+def brute(array):
+    if len(array) == 0:
+        return 0
+
+    max = 0
+
+    for i in range(0, len(array)):
+        for j in range(i + 1, len(array)):
+            dif = array[j] - array[i]
+            if dif > max:
+                max = dif
+    return max
+
+# optimized
+def opt(array):
+    if len(array) == 0:
+        return 0
+    min = array[0]
+    max = 0
+    for i in range(0, len(array)):
+        if array[i] < min:
+            min = array[i]
+        dif = array[i] - min
+        if dif > max:
+            max = dif
+    return max
+
+
+print(brute(input_array))
+print(opt(input_array))
