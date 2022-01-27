@@ -84,6 +84,8 @@ function isAnagramopt(s, t) {
 
 //online solution
 function online(s, t) {
+    if (s.length !== t.length) return false;
+
     let letter_counts = {};
 
     for (l of s) {
