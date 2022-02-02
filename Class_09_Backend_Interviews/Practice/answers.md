@@ -64,19 +64,19 @@
         - Second Normal Form: Be in first normal form. Single Column Primary Key that are not functionally dependant on any subset of candidate key relations.
         - Third Normal Form: Be in first two normal forms. Also, the database has no transitive functional dependencies.
 
-7. How do you improve a database query?
+6. How do you improve a database query?
     - Avoid multiple joins in a single query
     - Eliminate cursors from the query 
     - Creation and use of indexes
     - Drop unused indexes
 
-8. What is an ORM?
+7. What is an ORM?
     - ORM stands for Object Relational Mapping. An ORM convert incompatible data types. An ORM creates virtual objects. For example, MYSQL is transformed into an object that can be stored and altred in a programming language.
 
-9. What is DOA?
-    - DOA provides an abstract interface for a database. By mapping application calls by an additional layer, the DAO provides data operations without exposing details of the database.
+8. What is DAO?
+    - DAO (Data Access Object) provides an abstract interface for a database. By mapping application calls by an additional layer, the DAO provides data operations without exposing details of the database.
 
-10. What is the ACID property of a system?
+9. What is the ACID property of a system?
     - ACID stands for atomicity, consistency, isolation, and durability. These principles are applied to databases and their transactions. Atomicity means that each transaction is a single unit that happens once or doesn't happen at all. Consistency means the database should be consistent before and after a transaction. Isolation means that multiple transactions can happen the same time on a database without changing the consistency of a database. Durability means the data of a database or stored and peristent after transactions.
 
 **Data Structure Questions**
@@ -232,7 +232,7 @@
 3. How is Java interpreted?
     - Java does both compilation and interpretation, In Java, programs are not compiled into executable files. They are compiled into bytecode, which the JVM (Java Virtual Machine) then interprets and executes at runtime.
 
-5. What is strong-typing and weak-typing? Which is preferred? Why?
+4. What is strong-typing and weak-typing? Which is preferred? Why?
     - Strongly typed languages do type checking such as C and Java. Weakly typed languages do not do type checking such as Javascript. Typed languages are often preferred because they protect against bugs and errors in a system.
 
 **Miscellaneous Questions**
@@ -285,74 +285,73 @@
 1. What is a class?
     - A class is an object oriented structure that holds data and methods to alter that data.
 
-2. What is a clousure?
-    - 
+2. What is a closure?
+    - A closure is a function that can be stored as a variable also known as a referred to as a "first-class function. A closure has special ability to access other variables local to the scope it was created in.
 
 3. What do classes and closures have in common?
-    - 
+    - Classes let you define fields and methods whereas closures store information about local variables from a function call. Closures is often more related to functional programming and classes are more related to object oriented programming.
 
 4. What is an interface?
-    - 
+    - An interface is a structure or design that allows a program to enforce rules onto a class. An interface is a roadmap for a class that it must follow. For instance, a car must could implement a vehicle and the vehicle interface could state that the car must have certain attributes such as four wheels.
 
-5. What is a tirnary function?
-    - 
+5. What is a ternary operator?
+    - A ternary operator or ternary function is a short cut if else statement in lanugages such as Javascript, Python, Swift, ect. This operator allows for convient conditional statements in varying situations.
 
 6. What is the difference between a function and a method?
-    - 
+    - Function is a set of instructions that perform a task where as a method is a set of instructions that are associated with an object.
 
 7. What is an anynomous function? Why are they useful?
-    - 
+    - An anonymous function is a one-line function with no attached name or identifier. The advantage of an anonymous function is that it does not have to be stored in a separate file. Anonymous functions reduces the number of code files necessary for an application.
 
 8. What is a callback function?
-    - 
+    - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 9. What is functional programming?
-    - 
+    - Functional programming is a programming strategy that focuses on using function to run a program. It is a declarative programming structure where function definitions map values to other values. Functional programming does not focus on updating the running state of the program.
 
 10. What is a generic?
-    - 
+    - Generics mean parameterized types. The idea is to allow type (Integer, String, … etc, and user-defined types) to be a parameter to methods, classes, and interfaces. Using Generics, it is possible to create classes that work with different data types. An entity such as class, interface, or method that operates on a parameterized type is called a generic entity. For example, you create a linkedlist of integers, but instead of repeating the code for a linkedlist of strings you can use a generic to create a linkedlist that passes in a type upon creating the linkedlist.
 
 11. What is an abstract class?
-    - 
-
+    - In Java, an abstract class is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class). For example, an animal abstract class cannot be used to create an animal object, but a dog class could implement an animal class and that dog class could be used to make dog objects.
 
 **Software Design Questions**
 
-1. What is and when would you apply asynchronous communication between two systems?
-    - 
+1. What is asynchronous programming?
+    - Asynchronous programming is a form of parallel programming that allows a unit of work to run separately from the primary application thread. For example, you could have a main function running code that calls another function inside of it. Instead of pausing to have the inner function finish the outer function will continue running at the same time as the inner function.
 
 2. What does the term seperation of concerns mean?
-    - 
+    - Seperation of concerns is a design principle that seperates components of a program into sections. This makes an application more readable and easier to maintain. 
 
 3. What is the difference between Request/Reply and Publish/Subscribe models?
-    - 
+    - In the request-response model, a client requests data or services, and a server responds to the request by providing the data. Whereas in a publish-subscribe model a central source called a broker (also sometimes called a server) receives and distributes all data. Pub-sub clients can publish data to the broker or subscribe to get data from it—or both.
 
-4. When should one scale up vs scale out?
-    - 
+4. What does it mean to scale up vs scale down?
+    - Scaling up or vertical scaling means adding more compute power to a specific server or instance. Scaling down or horizontal scaling means adding more servers or instances to your infrastructure. 
 
 5. Why would you choose a microservice approach vs a monolithic app?
-    - 
+    - A microservice approach has independent components, which makes maintenence an individual components much easier. Also, microservices are easier to understand for developers working on them. In addition, each component in a microservice structure application can be scaled independently. 
 
 6. Explain the differences between a Thread and a Process?
-    - 
+    - A process is a program which is dispatched from the ready state and are scheduled in the CPU for execution. A thread is the segment of a process. This means a process can have multiple threads and these multiple threads are contained within a process. A thread has three states: Running, Ready, and Blocked. 
 
-7. What is the meaning of “high cohesion” and “loose coupling”?
-    - 
+7. What is the meaning of high cohesion?
+    - Cohesion is the degree to which the elements inside a module belong together. A module is said to have high cohesion if it contains related elements. Modules with a single, well-defined purpose are easy to understand and much more readable.
 
 8. What is a reverse proxy?
-    - 
+    - A reverse proxy server is a type of proxy server that typically sits behind the firewall in a private network and directs client requests to the appropriate backend server. A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.
 
-9. What is a thread?
-    - 
+9. What is the meaning of loose coupling?
+    - Coupling is the degree of interdependence between software modules. Two modules have low coupling or loose coupling if they are loosley connected. Loosely coupled modules are easier to develop and maintain. Since they are independent of each other, we can develop and test them in parallel. 
 
 10. What is lazy loading? Give an example of using this principle.
-    - 
+    - Lazy loading (also called on-demand loading) is an optimization technique for the online content, be it a website or a web app. Instead of loading the entire web page and rendering it to the user in one go as in bulk loading, the concept of lazy loading assists in loading only the required section and delays the remaining, until it is needed by the user. For example, images at the top of a page are loaded first and only if a user scrolls down are other images loaded.
 
 11. What is tight coupling?
-    - 
+    - Coupling is the degree of interdependence between software modules. Two modules have high coupling or tight coupling if they are tightly connected.
 
 12. When should one use memoization?
-    - 
+    - Memoization is a programming technique that accelerates performance by caching the return values of expensive function calls. For example, you may have a function that you need to call frequently with certain input values, you can cache the output to accelerate the responses.
 
 13. What is caching?
     - A cache is a data storage layer which stores a subset of data, so that future requests for that data can be accessed faster than through the data’s primary storage location.
@@ -362,20 +361,20 @@
 1. What is a singleton? Give an example of when to use this principle
     - A singleton is a design pattern, which restricts the instantiation of a class to a single instance. This provides coordinated access to that one resource. Use cases for this pattern include factories, builders, and objects that hold program state. For example, a singleton can be used for a single database object shared by different parts a program. Another common example of using a singleton is a logger object that needs to be share among all parts of a program.
 
-2. What is a factory? Give an example of when to use this principle
-    - 
+2. What is a factory? Give an example of when to use this principle.
+    - Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. Use the Factory Method when you don’t know beforehand the exact types and dependencies of the objects your code should work with. Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components. Use the Factory Method when you want to save system resources by reusing existing objects instead of rebuilding them each time.
 
-3. What is an adapter design pattern?
-    - 
+3. What is an adapter design pattern? Give an example of when to use this principle.
+    - Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate. Use the Adapter class when you want to use some existing class, but its interface isn’t compatible with the rest of your code. Use the pattern when you want to reuse several existing subclasses that lack some common functionality that can’t be added to the superclass.
 
-4. What is a builder design pattern?
-    - 
+4. What is a builder design pattern? Give an example of when to use this principle.
+    - Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code. Use the Builder pattern to get rid of a “telescopic constructor”. Use the Builder pattern when you want your code to be able to create different representations of some product (for example, stone and wooden houses). Use the Builder to construct Composite trees or other complex objects.
 
-5. What is an observer design pattern?
-    - 
+5. What is an observer design pattern? Give an example of when to use this principle.
+    - Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing. Use the Observer pattern when changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically. Use the pattern when some objects in your app must observe others, but only for a limited time or in specific cases.
 
-6. What is a strategy design pattern?
-    - 
+6. What is a strategy design pattern? Give an example of when to use this principle.
+    - Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable. Use the Strategy pattern when you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime. Use the Strategy when you have a lot of similar classes that only differ in the way they execute some behavior. Use the pattern to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic. Use the pattern when your class has a massive conditional operator that switches between different variants of the same algorithm.
 
 **Test Questions**
 
@@ -386,24 +385,40 @@
     - An integration test tests a group of elements or modules in a computer program or application. The test combines modules in order to validate the interactions between varying components.
 
 3. What does it mean to mock a test? When should or shouldn't you mock a test?
-    - 
+    - Mocking means creating a fake version of an external or internal service that can stand in for the real one, helping your tests run more quickly and more reliably. When your implementation interacts with an object’s properties, rather than its function or behavior, a mock can be used. One must be careful of mocking too much. If you mock too much your tests may stop actually testing your actual application but will just test a fake representation of your application.
 
 **Web Questions**
 
 1. What is a JWT? How does it work?
-    - 
+    - JWT, or JSON Web Token, is an open standard used to share security information between two client and a server. A common way to use JWTs is as OAuth bearer tokens. In this example, an authorization server creates a JWT at the request of a client and signs it so that it cannot be altered by any other party. The client will then send this JWT with its request to a REST API. The REST API will verify that the JWT’s signature matches its payload and header to determine that the JWT is valid. When the REST API has verified the JWT, it can use the claims to either grant or deny the client’s request.
 
 2. What are advantages of Web Services?
-    - 
+    - Offers faster communications within and across organizations
+    - Each service exists independently of other services.
+    - Interoperability has the highest priority.
+    - Using Web services, your application helps you to publish its message or function to the rest of the world.
+    - Web services help solve interoperability issues by giving different applications a way to link their data.
+    - Web services help you to exchange data between different applications and different platforms.
+    - It allows applications to communicate, exchange data, and shared services among themselves.
+    - Web services are specifically designed to be used as a web page request and help you to receive data.
+    - It serves as building blocks which makes it easy to reuse web service components in other services. Web Services are deployed on internet standards such as standard Apache, and Axis2. It provides WSDL, HTTP, driven services.
 
 3. What is a sticky session?
-    - 
+    - Sticky session refers to the feature of load balancing solutions to route the requests for a particular session to the same physical machine that serviced the first request for that session. A sticky session is a method that makes it so that a user will always be sent to the same server node. 
 
-4. What are and how does SSL/TLS work?
-    - 
+4. What are SSL/TLS?
+    - SSL/TLS encrypts communications between a client and server, primarily web browsers and web sites/applications. SSL (Secure Sockets Layer) encryption, and its more modern and secure replacement, TLS (Transport Layer Security) encryption, protect data sent over the internet or a computer network.
+    - The client and server securely negotiate the level of encryption in the following steps:
+        - The client contacts the server using a secure URL
+        - The server sends the client its certificate and public key
+        - The client verifies this with a Trusted Root Certification Authority to ensure the certificate is legitimate
+        - The client and server negotiate the strongest type of encryption that each can support
+        - The client encrypts a session (secret) key with the server’s public key, and sends it back to the server
+        - The server decrypts the client communication with its private key, and the session is established
+        - The session key (symmetric encryption) is now used to encrypt and decrypt data transmitted between the client and server
 
-5. What is JavaScript and why is it used?
-    - 
+5. What is JavaScript and what is it used for?
+    - JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Javascript is used for adding interactive behavior to web pages, creating web and mobile apps, and building web servers and developing server applications. Javascript is used for the web because it is the only programming language that is native to the web browser.
 
 6. Define and explain these nine server response error codes: 200, 201, 204, 301, 400, 401, 404, 409 and 500
     - 200: 'Okay' or successful.
@@ -417,56 +432,25 @@
     - 500: 'Internal Server Error'. This error indicates a server-side issue.
 
 7. What does statelessness mean in regards to web services?
-    - 
+    - As per the REST API architecture, the server does not store any state about the client session on the server-side. This restriction is called Statelessness. The application’s session state is therefore kept entirely on the client. The client is responsible for storing and handling the session related information on its own side.
 
 8. What is a TCP socket?
     - TCP sockets provide an open bi-directional connection between a client and server socket. The connection is uniquely identified using the combination of the client socket and server socket. The combination contains four elements: the client IP address and port, and the server IP address and port. For example, an HTTP request can be sent from the client socket 120.1.1.1:3022 from to the server socket 189.1.1.1:80. Major advantages of a TCP socket connection is that packets dropped in the network are detected and retransmitted by the sender and data is read in the order it was written by the sender.
 
 9. What are some ways to make websites faster?
-    - 
+    - Run a speed test
+    - Get fast and reliable web hosting
+    - Implement a Content Delivery Network (CDN) service
+    - Minify CSS and JavaScript files
+    - nable browser caching
+    - Optimize and clean the WordPress database
+    - Use optimized/premium and simple themes
+    - Optimize all images on your website
+    - Lazy load images and videos
+    - Prevent image hotlinking
+    - Host videos on 3rd party services and offload large media
+    - Keep plugins at a minimum/find the plugins that are slowing you down
+    - Control redirects on your website
+    - Optimize content (use excerpts, split long articles and comments, etc)
 
-The following websites were used to gather questions as well as answer the provided questions:
-- https://procoders.tech/blog/back-end-engineer-interview-questions
-- https://www.jetbrains.com/teamcity/ci-cd-guide/ci-cd-best-practices
-- https://github.com/arialdomartini/Back-End-Developer-Interview-Questions
-- https://en.wikipedia.org/wiki/Cloud_computing
-- https://www.datastax.com/blog/sql-vs-nosql-whats-the-difference
-- https://www.w3schools.com/sql/sql_injection.asp
-- https://www.indeed.com/career-advice/interviewing/back-end-interview-questions
-- https://machinelearningmastery.com/large-data-files-machine-learning
-- https://www.sqlshack.com/what-is-database-normalization-in-sql-server
-- https://www.guru99.com/database-normalization.html
-- https://www.developer.com/database/10-ways-to-improve-sql-query-performance
-- https://en.wikipedia.org/wiki/Data_access_object
-- https://www.redhat.com/en/topics/api/what-is-a-rest-api
-- https://www.geeksforgeeks.org/acid-properties-in-dbms
-- https://www.bmc.com/blogs/solid-design-principles
-- https://www.codementor.io/@zmitry/graph-data-structure-for-web-developers-10xf9a93hs
-- https://www.baeldung.com/cs/graphs
-- https://www.baeldung.com/cs/binary-trees-vs-linked-lists-vs-hash-tables
-- https://intellipaat.com/blog/tutorial/python-tutorial/python-tuple
-- https://www.howtouselinux.com/post/tcp-socket
-- https://en.wikipedia.org/wiki/Regular_expression
-- https://ihateregex.io/expr/phone
-- https://aws.amazon.com/caching
-- https://www.sumologic.com/glossary/encapsulation
-- https://www.analyticsvidhya.com/blog/2020/10/inheritance-object-oriented-programming
-- https://stackify.com/oop-concept-abstraction
-- https://www.geeksforgeeks.org/benefit-of-using-mvc
-- https://betterprogramming.pub/what-is-a-singleton-2dc38ca08e92 
-- https://refactoring.guru/design-patterns
-- https://www.interserver.net/tips/kb/mvc-advantages-disadvantages-mvc
-- https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design
-- https://www.bmc.com/blogs/cap-theorem
-- https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Fundamentals_of_data_structures/Dictionaries
-- https://www.geeksforgeeks.org/advantages-and-disadvantages-of-linked-list
-- https://www.geeksforgeeks.org/advantages-disadvantages-and-uses-of-doubly-linked-list
-- https://dare2compete.com/blog/advantages-and-disadvantages-of-arrays
-- https://www.geeksforgeeks.org/merge-sort
-- https://www.geeksforgeeks.org/quick-sort
-- https://www.geeksforgeeks.org/difference-between-stack-and-array
-- https://www.quora.com/What-are-the-advantages-and-disadvantages-of-a-queue-and-a-circular-queue
-- https://www.cprime.com/resources/what-is-agile-what-is-scrum
-- https://stackoverflow.com/questions/1326071/is-java-a-compiled-or-an-interpreted-programming-language
-- https://www.roberthalf.com/blog/salaries-and-skills/4-advantages-of-object-oriented-programming
-- https://shadow-soft.com/why-microservice-architecture
+*Refer to the references.md file to see a list of urls that used to find the above questions and answers.*
