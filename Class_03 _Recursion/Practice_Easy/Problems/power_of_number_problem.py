@@ -5,4 +5,4 @@ def exponent(base, exp):
         return 1
     return base * exponent(base, exp - 1)
 
-print(exponent(8, 4))
+print(exponent(2, 2))
