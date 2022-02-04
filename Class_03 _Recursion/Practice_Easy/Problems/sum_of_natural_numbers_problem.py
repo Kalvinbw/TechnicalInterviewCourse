@@ -5,7 +5,7 @@ def sum_natural(n):
         return 0
     return sum_natural(n - 1) + n
 
-print(sum_natural(20))
+print(sum_natural(5))
 
 def sum_num(n):
     if n == 0:
@@ -13,3 +13,11 @@ def sum_num(n):
     return sum_num(n-1) + (n-1)
 
 print(sum_num(5))
+
+def practice(num):
+    if num == 0:
+        return num
+
+    return practice(num-1) + (num-1)
+
+print(practice(5))
