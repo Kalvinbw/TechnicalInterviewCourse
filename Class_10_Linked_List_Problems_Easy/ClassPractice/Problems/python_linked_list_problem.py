@@ -8,6 +8,16 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+
     def append(self, data):
         if self.head is None:
             self.head = Node(data)
@@ -60,6 +70,10 @@ llist.append(4)
 llist.append(5)
 llist.append(6)
 llist.prepend(-3)
+llist.displayList()
+print()
+
+llist.reverse()
 llist.displayList()
 print()
 
