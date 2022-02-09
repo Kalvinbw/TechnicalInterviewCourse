@@ -38,6 +38,7 @@ class LinkedList:
 
     def removeNode(self, data):
         if self.head == None: return
+        
         if self.head.data == data:
             self.head = self.head.next
             return
