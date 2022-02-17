@@ -26,6 +26,16 @@ class Node {
         }
     }
 
+    search(value) {
+        if (value === this.data) {
+            return true;
+        }
+    }
+
+    delete(value) {
+
+    }
+
 
     inOrderTraversal() {
         if (this.left !== null) {
@@ -38,9 +48,15 @@ class Node {
     }
 }
 
+function delnode(value, node, parent) {
+    if (node.data === value) {
+        
+    }
+}
+
 root = new Node(50);
 root.insert(40);
-root.insert(40);
+root.insert(60);
 root.insert(30);
 root.insert(45);
 root.insert(55);
