@@ -31,6 +31,9 @@ class Node:
             else:
                 return self.right.search(value)
 
+    # inorder (left, root, right)
+    # also preorder (root, left, right)
+    # postorder (left, right, root)
     def printInOrder(self):
         if self.left is not None:
             self.left.printInOrder()
