@@ -1,7 +1,4 @@
 # Create a linked list using python
-from os import curdir
-
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -51,7 +48,6 @@ class LinkedList:
         current = self.head
         for _ in range(m-1):
             current = current.next
-
         
         for _ in range(n):
             current.next = current.next.next
